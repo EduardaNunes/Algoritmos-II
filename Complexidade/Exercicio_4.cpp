@@ -1,44 +1,16 @@
-// Desenvolver uma função para inverter um vetor passado
-// como parametro. Determine a ordem de grandeza do algoritmo.
+// Qual a complexidade do algoritmo abaixo?
 
-// void inverte(int vet[], int n);
-
-#include <iostream>
-
-using namespace std;
-
-void inverte(int vet[], int n)
+bool busca(int vetA[], int vetB[], int n,int x)
 {
-    int aux;
-    for(int i = 0; i < n/2; i++)
-    {
-        aux = vet[i];
-        vet[i] = vet[n-1-i];
-        vet[n-1-i] = aux;
-    }
-}
+    for(int i = 0; i < n; i++)      // O(N)
+        if(vetA[i] == x)            // Constante
+            return true;            // Constante
+    
+    for(int i = 0; i < n; i++)      // O(N)
+        if(vetB[i] == x)            // Constante
+            return true;            // Constante
+    
+    return false;                   // Constante
 
-int main()
-{
-    int n;
-
-    cout << "Insira o tamanho do vetor: " << endl;
-    cin >> n;
-
-    int vet[n];
-
-    cout << "Preencha o vetor: " << endl;
-
-    for(int i = 0; i < n; i++)
-    {
-        cin >> vet[i];
-    }
-
-    inverte(vet, n);
-
-    cout << "Vetor invertido: " << endl;
-
-    for(int i = 0; i < n; i++){
-        cout << vet[i] << " ";
-    }
+    // Complexidade: O(N) + O(N) = 2*O(N) = O(N)
 }

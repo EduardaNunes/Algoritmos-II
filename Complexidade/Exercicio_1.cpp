@@ -25,5 +25,5 @@ int main(){
     }
 
     cout << "A média dos elementos do vetor é: " << setprecision(1) << fixed << float(soma/n) << endl;      // 1
-                                                                                                            // Frequência: 3n+8
+    return 0;                                                                                               // Frequência: 3n+8
 }
