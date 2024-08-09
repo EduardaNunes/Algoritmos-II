@@ -1,9 +1,13 @@
-// Desenvolver uma função ̃iterativa para calcular o n-ésimo
-// termo da serie de Fibonacci. Analise a complexidade do
-// algoritmo e compare-o com a versao recursiva vista em
-// sala de aula.
+/*
 
-// int fibonacci(int n);
+Desenvolver uma função ̃iterativa para calcular o n-ésimo
+termo da serie de Fibonacci. Analise a complexidade do
+algoritmo e compare-o com a versao recursiva vista em
+sala de aula.
+
+int fibonacci(int n);
+
+*/
 
 #include <iostream>
 

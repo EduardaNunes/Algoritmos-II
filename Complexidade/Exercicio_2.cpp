@@ -1,8 +1,12 @@
-// Faça um algoritmo para somar duas matrizes quadradas
-// M1 e M2 de ordens n1 e n2, respectivamente. A soma só
-// deve ser realizada se n1 for igual a n2. Analise o algoritmo
-// e calcule a soma das frequências para os diferentes fluxos
-// de execução possíveis.
+/*
+
+Faça um algoritmo para somar duas matrizes quadradas
+M1 e M2 de ordens n1 e n2, respectivamente. A soma só
+deve ser realizada se n1 for igual a n2. Analise o algoritmo
+e calcule a soma das frequências para os diferentes fluxos
+de execução possíveis.
+
+*/
 
 #include <iostream>
 

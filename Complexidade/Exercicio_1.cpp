@@ -1,6 +1,10 @@
-// Faça um algoritmo para calcular a média dos elementos de
-// um vetor de tamanho n e analise a solução implementada,
-// calculando a soma das frequências.
+/*
+
+Faça um algoritmo para calcular a média dos elementos de
+um vetor de tamanho n e analise a solução implementada,
+calculando a soma das frequências.
+
+*/
 
 #include <iostream>
 #include <iomanip>

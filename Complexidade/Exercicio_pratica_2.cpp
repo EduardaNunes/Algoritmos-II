@@ -1,7 +1,11 @@
-// Desenvolver uma função para inverter um vetor passado
-// como parametro. Determine a ordem de grandeza do algoritmo.
+/*
 
-// void inverte(int vet[], int n);
+Desenvolver uma função para inverter um vetor passado
+como parametro. Determine a ordem de grandeza do algoritmo.
+
+void inverte(int vet[], int n);
+
+*/
 
 #include <iostream>
 
