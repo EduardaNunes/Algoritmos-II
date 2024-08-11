@@ -1,6 +1,6 @@
 /* 
 
-Desenvolver duas func ̧oes para alocar e retornar um vetor
+Desenvolver duas funções para alocar e retornar um vetor
 de n elementos, sendo n passado como parâmetro.
 
 a.  int* vetorAleatorio(int n): retorna um vetor
