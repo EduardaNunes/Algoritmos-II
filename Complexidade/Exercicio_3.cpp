@@ -3,7 +3,7 @@
 int maior(int v[], int n)
 {
     int m = v[0];                   // constante
-    for(int i = 1; i < n; i++)      // O(N-1)
+    for(int i = 1; i < n; i++)      // O(N)
         if(v[i] >= m)               // constante
             m = v[i];               // constante
     return m;                       // constante
