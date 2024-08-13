@@ -2,6 +2,23 @@
 
 using namespace std;
 
+void selectionSort(int vet[], int n){
+    for(int i = 0; i < n-1; i++){
+        int indiceMenor = i;
+        for(int j = i; j < n; j++){
+            if(vet[j] < vet[indiceMenor]){
+                indiceMenor = j;
+            }
+        }
+        if(indiceMenor != i){
+            int aux = vet[i];
+            vet[i] = vet[indiceMenor];
+            vet[indiceMenor] = aux;
+        }
+    }
+}
+
+/*
 int* SelectionSort(int vet[], int n){        // é a mesma função de baixo, porém sem os couts mostrando o passo a passo
     for(int i = 0; i < n-1; i++){
         int indiceMenor = i;
@@ -36,6 +53,8 @@ int* SelectionSortPassoAPasso(int vet[], int n){
     return vet;
 }
 
+*/
+
 int main(){
     int n;
 
@@ -49,11 +68,11 @@ int main(){
         cin >> vet[i];
     }
 
-    int *vetOrganizado = SelectionSortPassoAPasso(vet,n); // mostra o passo a passo da ordenação
+    selectionSort(vet,n); // mostra o passo a passo da ordenação
 
     cout << "Resultado do vetor: [ ";
     for(int i = 0; i < n; i++){
-        cout << *(vetOrganizado+i) << " ";
+        cout << vet[i] << " ";
     }
     cout << "]" << endl;
 }

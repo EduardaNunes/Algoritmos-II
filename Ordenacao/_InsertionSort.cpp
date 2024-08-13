@@ -2,6 +2,20 @@
 
 using namespace std;
 
+
+void insertionSort(int vet[], int n){
+    for(int i = 1; i < n; i++){
+        int j = i;
+        while(vet[j] < vet[j-1] && j > 0){
+            int aux = vet[j];
+            vet[j] = vet[j-1];
+            vet[j-1] = aux;
+            j--;
+        }
+    }
+}
+
+/*
 int* InsertionSortV2(int vet[], int n){        // Segunda tentativa vendo como q era pra ser feito.
     for(int j = 1; j < n; j++){
         int i = j;
@@ -28,6 +42,7 @@ int* InsertionSortV1(int vet[], int n){        // primeira tentativa. Funciona m
     }
     return vet;
 }
+*/
 
 int main(){
     int n;
@@ -42,11 +57,11 @@ int main(){
         cin >> vet[i];
     }
 
-    int *vetOrganizado = InsertionSortV2(vet,n); // mostra o passo a passo da ordenação
+    insertionSort(vet,n); // mostra o passo a passo da ordenação
 
     cout << "Resultado do vetor: [ ";
     for(int i = 0; i < n; i++){
-        cout << *(vetOrganizado+i) << " ";
+        cout << vet[i] << " ";
     }
     cout << "]" << endl;
 }
